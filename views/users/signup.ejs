@@ -1,0 +1,36 @@
+<form class="px-4 py-3" action="/api/v1/user" method="POST" enctype="multipart/form-data">
+    <div class="form-group">
+        <label for="exampleDropdownFormEmail1">Email address</label>
+        <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com" name="username"> 
+    </div>
+    <div class="form-group">
+        <label for="exampleDropdownFormPassword1">Password</label>
+        <input type="password" class="form-control" id="exampleDropdownFormPassword1" name="password" placeholder="Password" >
+    </div>
+
+    <div class="form-group" >
+        <label for="exampleDropdownFormimage">image</label>
+        <input type="file" class="form-control" id="exampleDropdownFormimage" placeholder="image" name="imgurl">
+    </div>
+
+    <div class="form-group" >
+        <label for="exampleDropdownFormfile">file</label>
+        <input type="file" class="form-control" id="exampleDropdownFormfile" placeholder="file" name="file">
+    </div>
+    
+    <div class="form-group">
+        <label for="exampleDropdownFormage">age</label>
+        <input type="number" class="form-control" id="exampleDropdownFormage" name="age" placeholder="age" >
+    </div>
+
+    <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="dropdownCheck">
+        <label class="form-check-label" for="dropdownCheck">
+        </label>
+    </div>
+    
+    <button type="submit" class="btn btn-primary">Sign in</button>
+</form>
+<div class="dropdown-divider"></div>
+<a class="dropdown-item" href="#">New around here? Sign up</a>
+<a class="dropdown-item" href="#">Forgot password?</a>

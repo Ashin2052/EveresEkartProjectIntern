@@ -1,0 +1,24 @@
+<table class="table">
+    <thead>
+        <tr>
+            <th>S.N.</th>
+            <th>username</th>
+            <th>Age</th>
+            <th>Image</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tr>
+        <td>1</td>
+        <td> <%= user.username %></td>
+        <td> <%= user.age %></td>
+        <td><img src="/<%= user.imgUrl %>" alt="Smiley face" height="42" width="42"> </td>
+
+        <td>
+            <a href="/users/edit/<%= user._id %>">Edit</a>
+            <td>
+                    <a href="/users/delete/<%= user._id %>">delete</a>
+                </td>
+        </td>
+    </tr>
+</table>

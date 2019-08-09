@@ -1,0 +1,32 @@
+<table class="table table-dark">
+    <thead>
+        <tr>
+            <th>S.N.</th>
+            <th>username</th>
+            <th>age</th>
+            <th>gender</th>
+            <th>image</th>
+            <th>edit</th>
+            <th>delete</th>
+        </tr>
+    </thead>
+    <% user.map((x,i)=> {%>
+    <tr>
+        <td><%= ++i %></td>
+        <td> <%= x.username %></td>
+        <td> <%= x.age %></td>
+        <td>
+            <%= x.gender%>
+        </td>
+        <td><img src="/<%= x.imgUrl %>" alt="Smiley face" height="42" width="42"> </td>
+
+        <td >
+                <a href="/users/edit/<%= x._id %>">edit </a>
+                </td>
+        
+        <td >
+             <a href="/users/delete/<%= x._id %>">delete</a>
+            </td>
+    </tr>
+    <%})%>
+</table>
