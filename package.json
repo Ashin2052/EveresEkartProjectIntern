@@ -22,7 +22,7 @@
     "express-ejs-layouts": "*",
     "express-session": "*",
     "mailinator": "1.0.2",
-    "mongoose": "4.13.7",
+    "mongoose": "5.7.5",
     "morgan": "1.9.0",
     "multer": "1.4.1",
     "nodemailer": "5.1.1",
